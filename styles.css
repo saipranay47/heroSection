@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+body{
+  font-size: calc(12px + 1vw);
+}
+h1 { font-weight: 700; font-size: 1.912em; }
+h2 { font-weight: 500; font-size: 1.616em; }
+h3 { font-weight: 500; font-size: 1.471em; }
+h4 { font-weight: 400; font-size: 1.3em; }
+h5 { font-weight: 400; font-size: 1.243em; }
+h6 { font-weight: 400; font-size: 1.132em; }
+p { font-weight: 400; font-size: 0.8em; }
+
+/* home section */
+
+.home {
+  width: 100%; 
+  max-width: 1400px; 
+  margin: auto;
+  padding: 10px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.home img {
+  width: 100%;
+  max-width: 500px;
+  min-width: 200px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.content h2 {
+  margin-bottom: 1.5rem;
+}
+
+.content p {
+  margin-bottom: 1.5rem;
+  max-width: 450px;
+}
+
+button {
+  font-size: 16px;
+  border: 1px solid #fff;
+  background: none;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 30px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #fff;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+@media only screen and (max-width: 940px) {
+  .home {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background-color: #000000;
+    color: white;
+  }
+} 
